@@ -1,1 +1,1 @@
-   print("triage bot placeholder")
+print("triage bot placeholder")
