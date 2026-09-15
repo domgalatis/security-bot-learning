@@ -43,3 +43,4 @@ if __name__ == "__main__":
         print(f"API request failed: {e}")
     except requests.exceptions.RequestException as e:
         print(f"Network error: {e}")
+        
