@@ -9,6 +9,7 @@ API_KEY = os.getenv("VIRUSTOTAL_API_KEY")
 
 print(f"Loaded key: {API_KEY[:6]}..." if API_KEY else "No key found")
 
+
 def scan_url(url):
     headers = {"x-apikey": API_KEY}
 
@@ -30,6 +31,7 @@ def scan_url(url):
         if data["attributes"]["status"] == "completed":
             return data["attributes"]["stats"]
         time.sleep(3)
+
 
 if __name__ == "__main__":
     test_url = "http://example.com"
